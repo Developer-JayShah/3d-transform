@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+      div{
+          display: inline-block;
+      }
+        #box1{
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 100px 0 0 100px;
+        }
+
+        #subbox1 {
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            
+
+        }
+
+        h2 {
+            text-align: center;
+            position: relative;
+            top: 40%;
+        }
+
+        #subbox1:hover {
+            transform-origin: left bottom;
+            transform: perspective(800px) rotateX(30deg);
+        }
+        #box2{
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 100px 0 0 100px;
+        }
+
+        #subbox2{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+        }
+        #subbox2:hover {
+            transform: perspective(800px) rotateY(80deg);
+        }
+        #box3{
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 100px 0 0 100px;
+        }
+
+        #subbox3{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+        }
+        #subbox3:hover {
+            transform: perspective(800px) rotateZ(30deg);
+        }
+        #box4{
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 100px 0 0 100px;
+        }
+
+        #subbox4{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            
+        }
+        #subbox4:hover {
+            transform:rotateY(30deg) translateZ(200px);
+            transition: .8s;
+        }
+        #box5{
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 100px 0 0 100px;
+        }
+
+        #subbox5{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            
+        }
+        #subbox5:hover {
+            transform:rotateY(30deg) translate3d(50px,50px,200px);
+            transition: .8s;
+        }
+        #box6{
+            width: 250px;
+            height: 250px;
+            background-color: tomato;
+            margin: 100px 0 0 100px;
+        }
+
+        #subbox6{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            
+        }
+        #subbox6:hover {
+            transform:perspective(800px) scale3d(2,2,2) rotatex(60deg) ;
+            transition: .8s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>3D TRANSFORM</h1>
+    <div>
+    <div id="box1">
+        <div id="subbox1">
+            <h2>Type = rotateX & transform origin</h2>
+        </div>
+    </div>
+    <div id="box2">
+        <div id="subbox2">
+            <h2>Type = rotateY & transform origin</h2>
+        </div>
+    </div>
+    <div id="box3">
+        <div id="subbox3">
+            <h2>Type = rotateZ</h2>
+        </div>
+    </div>
+  
+    </div>   
+    <div id="box4">
+        <div id="subbox4">
+            <h2>Type = translateZ</h2>
+        </div>
+    </div>
+    <div id="box5">
+        <div id="subbox5">
+            <h2>Type = translate3d & transition</h2>
+        </div>
+    </div>
+    <div id="box6">
+        <div id="subbox6">
+            <h2>Type = scale3d & transition</h2>
+        </div>
+    </div>
+</body>
+
+</html>
